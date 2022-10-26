@@ -1,19 +1,15 @@
 <template>
-  <div >
-    <h1> Home </h1>
+  <div>
+    <p> Patorais </p>
   </div>
 </template>
 
 <script>
-
-
 export default {
-  name: 'HomeView',
-  components: {
-  }
+  name: 'Activities'
 }
 </script>
 
+<style>
 
-
-
+</style>

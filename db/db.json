@@ -1,0 +1,185 @@
+{
+  "federative-units": [
+    {
+      "id": 1,
+      "abbreviation": "AC",
+      "state": "Acre"
+    },
+    {
+      "id": 2,
+      "abbreviation": "AL",
+      "state": "Alagoas"
+    },
+    {
+      "id": 3,
+      "abbreviation": "AP",
+      "state": "Amapá"
+    },
+    {
+      "id": 4,
+      "abbreviation": "AM",
+      "state": "Amazonas"
+    },
+    {
+      "id": 5,
+      "abbreviation": "BA",
+      "state": "Bahia"
+    },
+    {
+      "id": 6,
+      "abbreviation": "CE",
+      "state": "Ceará"
+    },
+    {
+      "id": 7,
+      "abbreviation": "DF",
+      "state": "Distrito Federal"
+    },
+    {
+      "id": 8,
+      "abbreviation": "ES",
+      "state": "Espírito Santo"
+    },
+    {
+      "id": 9,
+      "abbreviation": "GO",
+      "state": "Goiás"
+    },
+    {
+      "id": 10,
+      "abbreviation": "MA",
+      "state": "Maranhão"
+    },
+    {
+      "id": 11,
+      "abbreviation": "MT",
+      "state": "Mato Grosso"
+    },
+    {
+      "id": 12,
+      "abbreviation": "MS",
+      "state": "Mato Grosso do Sul"
+    },    
+    {
+      "id": 13,
+      "abbreviation": "MG",
+      "state": "Minas Gerais"
+    },
+    {
+      "id": 14,
+      "abbreviation": "PA",
+      "state": "Pará"
+    },
+    {
+      "id": 15,
+      "abbreviation": "PB",
+      "state": "Paraíba"
+    },
+    {
+      "id": 16,
+      "abbreviation": "PR",
+      "state": "Paraná"
+    },
+    {
+      "id": 17,
+      "abbreviation": "PE",
+      "state": "Pernambuco"
+    },
+    {
+      "id": 18,
+      "abbreviation": "PI",
+      "state": "Piauí"
+    },
+    {
+      "id": 19,
+      "abbreviation": "RJ",
+      "state": "Rio de Janeiro"
+    },
+    {
+      "id":20,
+      "abbreviation": "RN",
+      "state": "Rio Grande do Norte"
+    },
+    {
+      "id": 21,
+      "abbreviation": "RS",
+      "state": "Rio Grande do Sul"
+    },
+    {
+      "id": 22,
+      "abbreviation": "RO",
+      "state": "Rondônia"
+    },
+    {
+      "id": 23,
+      "abbreviation": "RR",
+      "state": "Roraima"
+    },
+    {
+      "id": 24,
+      "abbreviation": "SC",
+      "state": "Santa Catarina"
+    },
+    {
+      "id": 25,
+      "abbreviation": "SP",
+      "state": "São Paulo"
+    },
+    {
+      "id": 26,
+      "abbreviation": "SE",
+      "state": "Sergipe"
+    },
+    {
+      "id": 27,
+      "abbreviation": "TO",
+      "state": "Tocantins"
+    }
+  ],
+  "genders":[
+    {
+      "id": 1,
+      "gender":"Feminino"
+    },
+    {
+      "id": 2,
+      "gender":"Masculino"
+    }
+  ],
+  "sacraments":[
+    {
+      "id": 1,
+      "sacrament":"Nenhum" 
+    },
+    {
+      "id": 2,
+      "sacrament":"Batismo" 
+    },
+    {
+      "id": 3,
+      "sacrament":"Reconciliação ou Confissão" 
+    },
+    {
+      "id": 4,
+      "sacrament":"Primeira Eucaristia" 
+    }
+  ],
+  "catechists":[
+    {
+      "id":1,
+      "name": "Kelson",
+      "phone": "(85) 99793-1611"
+    },
+    {
+      "id":2,
+      "name": "Laura",
+      "phone": "(85) 99763-5777"
+    },
+    {
+      "id":3,
+      "name": "Letícia",
+      "phone": "(85) 98752-1111"
+    }
+  ],
+  "subscriptions": []
+}

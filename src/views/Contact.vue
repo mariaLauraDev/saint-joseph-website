@@ -1,19 +1,15 @@
 <template>
-  <div >
-    <h1> Home </h1>
+  <div>
+    <p> Contato </p>
   </div>
 </template>
 
 <script>
-
-
 export default {
-  name: 'HomeView',
-  components: {
-  }
+  name: 'Contact'
 }
 </script>
 
+<style>
 
-
-
+</style>
