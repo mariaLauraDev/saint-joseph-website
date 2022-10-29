@@ -1,5 +1,5 @@
 {
-  "federative-units": [
+  "federatives": [
     {
       "id": 1,
       "abbreviation": "AC",
@@ -144,24 +144,6 @@
     {
       "id": 2,
       "gender":"Masculino"
-    }
-  ],
-  "sacraments":[
-    {
-      "id": 1,
-      "sacrament":"Nenhum" 
-    },
-    {
-      "id": 2,
-      "sacrament":"Batismo" 
-    },
-    {
-      "id": 3,
-      "sacrament":"Reconciliação ou Confissão" 
-    },
-    {
-      "id": 4,
-      "sacrament":"Primeira Eucaristia" 
     }
   ],
   "catechists":[

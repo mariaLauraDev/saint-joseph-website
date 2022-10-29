@@ -4,21 +4,28 @@
   <div>
       <router-view></router-view>
   </div>
-  <p> teste</p>
+  <Footer />
+  <div>
+    
+  </div>
 </div>
 </template>
 
 <script>
+import Footer from './components/Footer.vue'
 import Navbar from './components/Navbar.vue'
 
 export default {
   name: 'App',
   components:{
-    Navbar
-  },
+    Navbar,
+    Footer
+  }
 }
 </script>
 
 <style>
-
+*{
+  font-family: 'Montserrat', sans-serif;
+}
 </style>

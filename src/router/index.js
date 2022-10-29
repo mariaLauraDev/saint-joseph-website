@@ -10,20 +10,22 @@ const routes = [
   {
     path: '/schedule',
     name: 'Schedule',
-    component: () =>
-      import(/* webpackChunkName: "Pedidos" */ '../views/Schedule.vue')
+    component: () => import('../views/Schedule.vue')
   },
   {
     path: '/contact',
     name: 'Contact',
-    component: () =>
-      import(/* webpackChunkName: "Pedidos" */ '../views/Contact.vue')
+    component: () => import('../views/Contact.vue')
   },
   {
     path: '/activities',
     name: 'Activities',
-    component: () =>
-      import(/* webpackChunkName: "Pedidos" */ '../views/Activities.vue')
+    component: () => import('../views/Activities.vue')
+  },
+  {
+    path: '/subscriptions',
+    name: 'Subscriptions',
+    component: () => import('../views/Subscriptions.vue')
   }
 ]
 
