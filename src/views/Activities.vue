@@ -1,79 +1,113 @@
 <template>
-  <div id="activities" class="fullrow">
-    <div class="row-wrapper">
-      <h2> CONHEÇA NOSSAS PASTORAIS </h2>
-      <div id="pastorais-desktop">
-        <div class="wrap">
-          <ul class="tabs group">
-            <li><a class="active" href="#/batismo">Batismo</a></li>
-            <li><a href="#/catequese" class="">Catequese</a></li>
-          </ul>
-          <div id="content">
-            <div class="tab-text" id="batismo">
-              <div class="tab-content-image">
-                <img src="../assets/baptism.png" alt="Baptism Symbol">
-              </div>
-              <div class="tab-content-text">
-                <p> A pastoral do batismo é um serviço de apoio, incentivo e colaboração que a comunidade paroquial oferece aos pais e padrinhos na sua missão de primeiros e principais educadores de seus filhos. </p>
-              </div>
-            </div>
-            <div class="tab-text display-none" id="catequese">
-              <div class="tab-content-image">
-                <img src="../assets/baptism.png" alt="Baptism Symbol">
-              </div>
-              <div class="tab-content-text">
-                <p> A pastoral do batismo é um serviço de apoio, incentivo e colaboração que a comunidade paroquial oferece aos pais e padrinhos na sua missão de primeiros e principais educadores de seus filhos. </p>
-              </div>
-            </div>
+  <div class="body">
+    <div class="tabs">
+      <div class="tabs_head">
+        <span class="tabs_toggle is-active"> Dízimo </span>
+        <span class="tabs_toggle"> Batismo </span>
+      </div>
+      <div class="tabs_body">
+        <div class="tabs_content is-active">
+          <h2 class="tabs_title"> Dízimo </h2>
+          <p class="tabs_text"> Dízimo text </p>
+        </div>
 
-
-          </div>
-
+        <div class="tabs_content ">
+          <h2 class="tabs_title"> Batismo </h2>
+          <p class="tabs_text"> Dízimo text </p>
         </div>
 
       </div>
     </div>
-  <p> oi </p>
   </div>
 </template>
 
 <script>
+
 export default {
-  name: 'Activities'
-}
+  name: 'Activities', 
+  methods: {
+    },
+    mounted(){
+      let tabs = document.querySelectorAll('.tabs_toggle');
+      let contents = document.querySelectorAll('.tabs_content');
+      tabs.forEach((tab,index) =>{
+        tab.addEventListener('click', () => {
+          contents.forEach((content) => {
+          content.classList.remove('is-active');
+        });
+        tabs.forEach((tab) => {
+        tab.classList.remove('is-active');
+        });
+        contents[index].classList.add('is-active');
+        tabs[index].classList.add('is-active');
+      });
+      });
+    }
+  }
 </script>
 
+
+
 <style scoped>
-@media (max-width: 827px){
-#pastorais-desktop {
-    display: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+.body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
 }
 
-::-webkit-scrollbar {
-    width: 12px;
-}
-::-webkit-scrollbar-thumb {
-    background: var(--orange);
-}
-::-webkit-scrollbar-track {
-    background: var(--black);
-}
-::selection {
-    color: var(--white);
-    background: var(--orange);
+.tabs{
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #008037;
+  box-shadow: 0px 0px 0px 0px rgb(0,0,0,0.05);
 }
 
-
-#pastorais-desktop ul.tabs {
-    font-weight: bold;
-    /* width: 780px; */
-    height: 80px;
-    margin: 0 auto;
-    list-style: none;
-    overflow: hidden;
-    padding: 0;
+.tabs_head{
+  display: flex;
+  align-items: stretch;
 }
 
+.tabs_toggle{
+  display: flex;
+  width: 50%;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+  cursor: pointer;
+}
+
+.tabs_toggle.is-active{
+  background:#fff ;
+}
+
+.tabs_content{
+  padding: 30px;
+  display: none;
+}
+
+.tabs_content.is-active{
+  display: block;
+}
+.tabs_title{
+  font-size: 18px;
+  color:#000;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.tabs_text{
+  font-size: 14px;
+  color: #000;
+}
 
 </style>

@@ -79,7 +79,9 @@ export default {
 .container {
   width: 60%;
   margin: 30px auto;
-}}
+}
+
+}
 
 @media (max-width: 768px) {
   /* For mobile phones: */
@@ -87,6 +89,11 @@ export default {
   width: 100%;
   margin: 5px auto;
   }
+  .day-container{
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
 }
 
 h1{
@@ -96,14 +103,14 @@ h1{
 }
 
 .day-container{
-  width: 70%;
+  width:70%;
   margin: 0 auto;
   padding-bottom: 2em;
 }
 
 .header{
   font-size: 18pt;
-  border-bottom: 2px solid #008037;
+  border-bottom: 3px solid #008037;
   font-weight: 600;
   margin: 0 0  15px 0;
 }

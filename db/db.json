@@ -1,167 +1,170 @@
 {
-  "federatives": [
+  "federatives": {
+    "units": [
+      {
+        "id": 1,
+        "abbr": "AC",
+        "state": "Acre"
+      },
+      {
+        "id": 2,
+        "abbr": "AL",
+        "state": "Alagoas"
+      },
+      {
+        "id": 3,
+        "abbr": "AP",
+        "state": "Amapá"
+      },
+      {
+        "id": 4,
+        "abbr": "AM",
+        "state": "Amazonas"
+      },
+      {
+        "id": 5,
+        "abbr": "BA",
+        "state": "Bahia"
+      },
+      {
+        "id": 6,
+        "abbr": "CE",
+        "state": "Ceará"
+      },
+      {
+        "id": 7,
+        "abbr": "DF",
+        "state": "Distrito Federal"
+      },
+      {
+        "id": 8,
+        "abbr": "ES",
+        "state": "Espírito Santo"
+      },
+      {
+        "id": 9,
+        "abbr": "GO",
+        "state": "Goiás"
+      },
+      {
+        "id": 10,
+        "abbr": "MA",
+        "state": "Maranhão"
+      },
+      {
+        "id": 11,
+        "abbr": "MT",
+        "state": "Mato Grosso"
+      },
+      {
+        "id": 12,
+        "abbr": "MS",
+        "state": "Mato Grosso do Sul"
+      },
+      {
+        "id": 13,
+        "abbr": "MG",
+        "state": "Minas Gerais"
+      },
+      {
+        "id": 14,
+        "abbr": "PA",
+        "state": "Pará"
+      },
+      {
+        "id": 15,
+        "abbr": "PB",
+        "state": "Paraíba"
+      },
+      {
+        "id": 16,
+        "abbr": "PR",
+        "state": "Paraná"
+      },
+      {
+        "id": 17,
+        "abbr": "PE",
+        "state": "Pernambuco"
+      },
+      {
+        "id": 18,
+        "abbr": "PI",
+        "state": "Piauí"
+      },
+      {
+        "id": 19,
+        "abbr": "RJ",
+        "state": "Rio de Janeiro"
+      },
+      {
+        "id": 20,
+        "abbr": "RN",
+        "state": "Rio Grande do Norte"
+      },
+      {
+        "id": 21,
+        "abbr": "RS",
+        "state": "Rio Grande do Sul"
+      },
+      {
+        "id": 22,
+        "abbr": "RO",
+        "state": "Rondônia"
+      },
+      {
+        "id": 23,
+        "abbr": "RR",
+        "state": "Roraima"
+      },
+      {
+        "id": 24,
+        "abbr": "SC",
+        "state": "Santa Catarina"
+      },
+      {
+        "id": 25,
+        "abbr": "SP",
+        "state": "São Paulo"
+      },
+      {
+        "id": 26,
+        "abbr": "SE",
+        "state": "Sergipe"
+      },
+      {
+        "id": 27,
+        "abbr": "TO",
+        "state": "Tocantins"
+      }
+    ]
+  },
+  "genders": [
     {
       "id": 1,
-      "abbreviation": "AC",
-      "state": "Acre"
+      "gender": "Feminino"
     },
     {
       "id": 2,
-      "abbreviation": "AL",
-      "state": "Alagoas"
-    },
-    {
-      "id": 3,
-      "abbreviation": "AP",
-      "state": "Amapá"
-    },
-    {
-      "id": 4,
-      "abbreviation": "AM",
-      "state": "Amazonas"
-    },
-    {
-      "id": 5,
-      "abbreviation": "BA",
-      "state": "Bahia"
-    },
-    {
-      "id": 6,
-      "abbreviation": "CE",
-      "state": "Ceará"
-    },
-    {
-      "id": 7,
-      "abbreviation": "DF",
-      "state": "Distrito Federal"
-    },
-    {
-      "id": 8,
-      "abbreviation": "ES",
-      "state": "Espírito Santo"
-    },
-    {
-      "id": 9,
-      "abbreviation": "GO",
-      "state": "Goiás"
-    },
-    {
-      "id": 10,
-      "abbreviation": "MA",
-      "state": "Maranhão"
-    },
-    {
-      "id": 11,
-      "abbreviation": "MT",
-      "state": "Mato Grosso"
-    },
-    {
-      "id": 12,
-      "abbreviation": "MS",
-      "state": "Mato Grosso do Sul"
-    },    
-    {
-      "id": 13,
-      "abbreviation": "MG",
-      "state": "Minas Gerais"
-    },
-    {
-      "id": 14,
-      "abbreviation": "PA",
-      "state": "Pará"
-    },
-    {
-      "id": 15,
-      "abbreviation": "PB",
-      "state": "Paraíba"
-    },
-    {
-      "id": 16,
-      "abbreviation": "PR",
-      "state": "Paraná"
-    },
-    {
-      "id": 17,
-      "abbreviation": "PE",
-      "state": "Pernambuco"
-    },
-    {
-      "id": 18,
-      "abbreviation": "PI",
-      "state": "Piauí"
-    },
-    {
-      "id": 19,
-      "abbreviation": "RJ",
-      "state": "Rio de Janeiro"
-    },
-    {
-      "id":20,
-      "abbreviation": "RN",
-      "state": "Rio Grande do Norte"
-    },
-    {
-      "id": 21,
-      "abbreviation": "RS",
-      "state": "Rio Grande do Sul"
-    },
-    {
-      "id": 22,
-      "abbreviation": "RO",
-      "state": "Rondônia"
-    },
-    {
-      "id": 23,
-      "abbreviation": "RR",
-      "state": "Roraima"
-    },
-    {
-      "id": 24,
-      "abbreviation": "SC",
-      "state": "Santa Catarina"
-    },
-    {
-      "id": 25,
-      "abbreviation": "SP",
-      "state": "São Paulo"
-    },
-    {
-      "id": 26,
-      "abbreviation": "SE",
-      "state": "Sergipe"
-    },
-    {
-      "id": 27,
-      "abbreviation": "TO",
-      "state": "Tocantins"
+      "gender": "Masculino"
     }
   ],
-  "genders":[
+  "catechists": [
     {
       "id": 1,
-      "gender":"Feminino"
-    },
-    {
-      "id": 2,
-      "gender":"Masculino"
-    }
-  ],
-  "catechists":[
-    {
-      "id":1,
       "name": "Kelson",
       "phone": "(85) 99793-1611"
     },
     {
-      "id":2,
+      "id": 2,
       "name": "Laura",
       "phone": "(85) 99763-5777"
     },
     {
-      "id":3,
+      "id": 3,
       "name": "Letícia",
       "phone": "(85) 98752-1111"
     }
   ],
-  "subscriptions": []
+  "subscriptions": [
+  ]
 }
