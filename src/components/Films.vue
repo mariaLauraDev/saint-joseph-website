@@ -2,7 +2,7 @@
   <div id="main">
 
   <div class="movie" v-for="(movie,index) in movies" v-bind:key="index">
-    <div v-if="index <= 4">
+    <div>
       <img :src ="`https://image.tmdb.org/t/p/w500/${movie.poster_path}`" alt="image">
 
       <div class="movie-info">
@@ -36,7 +36,7 @@ export default {
     async getMovies(url){
       const req = await fetch(url);
       const data = await req.json();
-      this.movies = data.results;
+      this.movies = data.results.slice(0,4);
       console.log(data);
       },
     async getImgUrl(poster_path){
@@ -71,7 +71,7 @@ export default {
   justify-content: center;
 }
 .movie{
-  width: 250px;
+  width: 400px;
   margin: 1rem;
   border-radius: 3px;
   box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);

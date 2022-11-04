@@ -1,36 +1,66 @@
 <template>
-  <div id="nav">
-    <div class="menu-icon"><span class="fas fa-bars"></span></div>
+  <nav>
+    <div class="menu-icon"><span class="bars"> <img src="../assets/navbar/menu.png"></span></div>
     <div class="logo">
-      <router-link to="/" id="logo-url">  <img src="/img/logo-mono.png" alt="Logo da Comunidade São José" id ="logo"> </router-link> 
+      <router-link to="/" >  <img src="/img/logo-mono.png" alt="Logo da Comunidade São José" id ="logo"> </router-link> 
     </div>
     
-    <div class="nav-itens">
-      <router-link to="/"> Início </router-link>
-      <router-link to="/activities"> Pastorais </router-link>
-      <router-link to="/subscriptions"> Inscrições </router-link>
-      <router-link to="/schedule"> Horários </router-link>
-      <router-link to="/contact"> Contato </router-link>
+    <div class="nav-items">
+      <ul>
+        <li><router-link to="/"> Início </router-link></li>
+        <li><router-link to="/activities"> Pastorais </router-link></li>
+        <li><router-link to="/subscriptions"> Inscrições </router-link></li>
+        <li><router-link to="/schedule"> Horários </router-link></li>
+        <li><router-link to="/contact"> Contato </router-link></li>
+      </ul>
+      
     </div>
-    <div class="search-icon"><span class="fas fa-search"></span></div>
-    <div class="cancel-icon"><span class="fas fa-times"></span></div>
+    <div class="search-icon"><span><img src="../assets/navbar/search.png"></span></div>
+    <div class="cancel-icon"><span> <img src="../assets/navbar/x.png"></span></div>
     <form action="#">
       <input type="search" class="search-data" placeholder="Pesquisar..." required>
-      <button type="submit" class="fas fa-search"></button>
+      <button type="submit"> <img src="../assets/navbar/search.png"></button>
     </form>
-  </div>
+  </nav>
 </template>
 
 <script>
 
 export default {
-  name: 'Navbar'
+  name: 'Navbar',
+  mounted(){
+    const menuBtn =document.querySelector(".menu-icon span");
+    const searchBtn =document.querySelector(".search-icon");
+    const cancelBtn =document.querySelector(".cancel-icon");
+    const items =document.querySelector(".nav-items");
+    const form =document.querySelector("form");
+    menuBtn.onclick = () =>{
+      items.classList.add("active");
+      menuBtn.classList.add("hide");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+
+    cancelBtn.onclick = () =>{
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      searchBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      form.classList.remove("active");
+    }
+
+    searchBtn.onclick = () =>{
+      form.classList.add("active");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+  }
 }
 </script>
 
 <style scoped>
 
-#nav{
+nav{
   background-color:  var(--primary-color);
   padding: 0 100px;
   display: flex;
@@ -43,10 +73,34 @@ export default {
   font-weight: 500;
 }
 
-#nav .nav-itens{
+nav .nav-items li a{
+  color: #FFF;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+nav .nav-items li a:hover{
+  color: var(--fiveth-color); 
+}
+
+nav .nav-items li{
+  list-style: none;
+  padding: 0 15px;
+}
+
+
+nav .nav-items ul{
   display: flex;
   list-style: none;
   padding: 0 0 0 40px;
+  flex: 1;
+}
+
+nav .nav-items{
+  display: flex;
+  list-style: none;
+  padding: 0 0 0 10px;
   flex: 1;
 }
 
@@ -54,130 +108,179 @@ export default {
   max-width: 100px;
 }
 
-#nav #logo-url {
-  margin: auto;
-  margin-left: 0;
-}
-
-#nav a {
-  color: #FFF;
-  text-decoration: none;
-  margin: 12px;
-  transition: .5s;
-}
-#nav a:hover{
-  color: var(--fiveth-color);
-}
-
-#nav form{
+nav form{
   display: flex;
+  height: 40px;
   border-radius: 2px;
   padding: 2px;
-  height: 40px;
   background: var(--primary-color);
   min-width: 18%!important;
-  border: 1px solid rgba(155,155,155,.2);
+  border: 1px solid rgba(155,155,155,0.2);
+  opacity: 0;
+  transition: top 0.3s ease, opacity 0.1s ease;
+  pointer-events: none;}
 
+nav form.active{
+  opacity: 1;
+  top: 95px;
+  pointer-events: auto;
 }
 
-#nav form .search-data{
+nav form .search-data{
   height: 100%;
   width: 100%;
   padding: 0 10px;
-  padding: 0 10px;
-  color: #FFF;
+  color: #FFF ;
   font-weight: 500;
   background: none;
   border: none;
   font-size: 17px;
 }
 
-#nav form button{
+nav form button{
   padding: 0 15px;
-  background: var(--secondary-color) ;
-  border: none;
+  background: var(--secondary-color);
   cursor: pointer;
   font-size: 17px;
-  color: #FFF;
+  color:#fff ;
   border-radius: 2px;
 }
 
-#nav .menu-icon, #nav .search-icon, #nav .cancel-icon{
-  width: 40px;
-  color: #FFF;
+
+.menu-icon .bars img{
+  width: 25px;
+  height: 25px;
+}
+
+form button img{
+  width: 15px;
+  height: 15px;
+}
+
+.search-icon span img, .cancel-icon span img{
+  width: 15px;
+  height: 15px;
+}
+
+nav .menu-icon, nav .search-icon, nav .cancel-icon{
+  width: 25px;
+  height: 25px;
   text-align: center;
   margin: 0 50px;
   font-size: 18px;
   cursor: pointer;
   display: none;
 }
+nav .menu-icon span, nav .search-icon, nav .cancel-icon{
+  display: none;
 
-
-#nav .menu-icon span, #nav .search-icon, #nav .cancel-icon{
-display: none;
 }
 
-@media (max-width: 1245px){
-  #nav{
+@media(max-width:1245px){
+  nav{
     padding: 0 50px;
   }
+
+
 }
 
-@media (max-width: 1140px){
-  #nav{
-    padding: 0px;
+@media(max-width:1140px){
+  nav{
+    padding: 0;
   }
-  #nav .logo{
+  .logo{
     flex: 2;
-    text-align: center;
+    text-align: center; 
   }
-  #nav .nav-itens{
+  nav .nav-items{
     position: fixed;
-    z-index: 99;
-    top: 70px;
+    top: 100px;
     width: 100%;
-    left: -100%;
     height: 100%;
-    background: var(--primary-color);
-    display: inline-block;
+    background: #202733;
+    left: -100%;
+    transition: left 0.3s ease;
+  }
+
+  nav .nav-items.active{
+    left: 0%;
+  }
+
+  nav .nav-items ul{
+    display: flex;
+    flex-direction: column;
     padding: 10px 50px 0 50px;
     text-align: center;
   }
-  #nav .nav-itens router-link{
+
+  nav .nav-items li{
     line-height: 40px;
     margin: 30px 0;
-    font-size: 20px;
   }
-  #nav form{
+
+  nav .nav-items li a{
+    font-size: 20px;
+
+  }
+
+  nav form{
     position: absolute;
-    top: 80px;
+    top: 95px;
     right: 50px;
   }
-  #nav form:before{
+
+  nav form:before{
     position: absolute;
     content: "";
-    top: -13px;
+    top: -10px;
     right: 0;
     width: 0;
     height: 0;
     z-index: -1;
+    margin: -20px 0 0;
     border: 10px solid transparent;
-    border-bottom-color:  var(--primary-color);
+    border-bottom-color:  #202733;
   }
-  #nav form:after{
+
+  nav form:after{
     position: absolute;
     content: "";
     height: 60px;
+    width: calc(100%+20px);
     padding: 2px;
+    background: #202733 ;
+    border-radius: 2px;
+    z-index: -2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%,);
+    }
   
-  }
-
-
-  #nav .menu-icon{
+  nav .menu-icon{
     display: block;
   }
-  #nav .search-icon, #nav .menu-icon span{
+
+  nav .search-icon, nav .menu-icon span{
     display: block;
   }
+
+  nav .search-icon.hide, nav .menu-icon span.hide{
+    display: none;
+  }
+
+  nav .cancel-icon.show{
+    display: block;
+  }
+
 }
+
+
+
+
+
+
+
+
+
+
 </style>

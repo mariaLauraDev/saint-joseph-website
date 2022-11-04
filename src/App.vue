@@ -27,6 +27,9 @@ export default {
 <style>
 *{
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root{

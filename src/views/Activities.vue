@@ -1,8 +1,8 @@
 <template>
-  <div class="container" v-for="pastoral in pastorais" :key="pastoral.id">
-    <div v-if="pastoral.id%2==0" >
+  <div class="container" v-for="(pastoral,index) in pastorais" :key="index">
+    <div :class="[{'reverse': index%2==0 }]" >
       <div class="image">
-      <img src='../assets/baptism.png' alt="image">
+      <img src='../assets/activities/baptism.png' alt="image">
       </div>
       
       <div class="description">
@@ -14,22 +14,6 @@
         </div>
       </div>
     </div>
-
-    <div v-if="pastoral.id%2==1">
-      <div class="description">
-        <div class="title">
-          {{pastoral.title}}
-        </div>
-        <div class="text">
-          {{pastoral.text}}
-        </div>
-      </div>
-
-      <div class="image">
-      <img src='../assets/baptism.png' alt="image">
-      </div>
-    </div>
-    
     
   </div>
 </template>
@@ -54,5 +38,7 @@ export default {
 
 <style scoped>
 
-
+.reverse{
+  flex-direction: row-reverse;
+}
 </style>
