@@ -40,6 +40,7 @@ export default {
   --fiveth-color:#AB815A;
   --sixth-color: #59992B;
   --seventh-color: #485773;
+  --eith-color: #483F59;
   --wp--preset--font-size--small: 13px;
   --wp--preset--font-size--medium: 20px;
   --wp--preset--font-size--large: 36px;

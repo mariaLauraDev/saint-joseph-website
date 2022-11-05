@@ -1,6 +1,10 @@
 <template>
   <div class="container">
-    <h1> CRONOGRAMA SEMANAL </h1>
+
+    <div class="head"> 
+      <h2> CRONOGRAMA SEMANAL </h2>
+    </div>
+    
     <div class="day-container"> 
       <div class="header">
         Domingo
@@ -96,10 +100,11 @@ export default {
 }
 }
 
-h1{
+h2{
   text-align: center;
   width: 70%;
   margin: 30px auto;
+  font-size: 32px;
 }
 
 .day-container{
@@ -124,4 +129,5 @@ h1{
   font-weight: 600;
   margin: 0 15px  15px 0;
 }
+
 </style>

@@ -13,9 +13,9 @@ const routes = [
     component: () => import('../views/Schedule.vue')
   },
   {
-    path: '/contact',
-    name: 'Contact',
-    component: () => import('../views/Contact.vue')
+    path: '/knowthefaith',
+    name: 'KnowTheFaith',
+    component: () => import('../views/KnowTheFaith.vue')
   },
   {
     path: '/activities',

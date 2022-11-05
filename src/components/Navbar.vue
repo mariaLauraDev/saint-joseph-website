@@ -11,7 +11,7 @@
         <li><router-link to="/activities"> Pastorais </router-link></li>
         <li><router-link to="/subscriptions"> Inscrições </router-link></li>
         <li><router-link to="/schedule"> Horários </router-link></li>
-        <li><router-link to="/contact"> Contato </router-link></li>
+        <li><router-link to="/knowthefaith"> Conheça a fé </router-link></li>
       </ul>
       
     </div>
@@ -93,7 +93,7 @@ nav .nav-items li{
 nav .nav-items ul{
   display: flex;
   list-style: none;
-  padding: 0 0 0 40px;
+  padding: 0 0 0 15px;
   flex: 1;
 }
 
@@ -105,7 +105,7 @@ nav .nav-items{
 }
 
 #logo {
-  max-width: 100px;
+  max-width: 70px;
 }
 
 nav form{

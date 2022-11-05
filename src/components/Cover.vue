@@ -18,8 +18,8 @@ export default {
 <style scoped>
 .container{
   width: 100%;
-  height: 750px;
-  background-image: url('../assets/heart.png');
+  height: 630px;
+  background-image: url('../assets/saint-joseph.png');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -32,10 +32,10 @@ export default {
   text-align: center;
   margin: 0 auto;
   padding: 200px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   justify-content: center;
   font-size: 20px;
-  color: #fff;
+  color: var(--fiveth-color);
   font-family: inherit;
   font-weight:100;
   text-transform: uppercase;
@@ -48,7 +48,7 @@ export default {
   justify-content: center;
   padding-bottom: 20px;
   font-size: 60px;
-  color: var(--fiveth-color);
+  color: #fff;
   font-family: 'Old Standard TT', serif;
   text-transform: uppercase;
   font-weight:700;
@@ -61,16 +61,37 @@ export default {
   justify-content: center;
   font-size: 20px;
   color: var(--fiveth-color);
-  font-family: 'Old Standard TT', serif;
+  font-family: inherit;
   text-transform: uppercase;
   font-weight:300;
 }
 
-@media only screen and (max-width: 767px){
-.section {
-    background-attachment: scroll!important;
-    height: auto!important;
+@media(max-width:1140px){
+  .container{
+  width: 100%;
+  height: 550px;
+  background-image: url('../assets/saint-joseph-mob.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-color: var(--primary-color);
+  margin-top: 0;
 }
+
+.header_one{
+  padding: 60px;
+  padding-bottom: 20px;
+}
+
+.header_two{
+  font-size: 40px;
+}
+
+.header_three{
+  display: none;
+
+}
+
 }
 
 

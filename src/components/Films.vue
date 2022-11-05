@@ -58,9 +58,6 @@ export default {
 </script>
 
 <style scoped>
-*{
-  box-sizing: border-box;
-}
   
 #main{
   background-color: #fff;
