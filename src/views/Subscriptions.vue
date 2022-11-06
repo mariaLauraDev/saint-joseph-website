@@ -1,6 +1,6 @@
 <template>
   <div class="form-container">
-    <h1>FORMULÁRIO DE INSCRIÇÃO</h1>
+    <h2>FORMULÁRIO DE INSCRIÇÃO</h2>
     <p> A catequese de iniciação à vida cristã está com inscrições abertas em nossa comunidade. Se você é um jovem com idade entre 14 a 21 anos, venha fazer parte do nosso grupo!</p>
     <form @submit="createSubscription">
       <fieldset>
@@ -146,34 +146,45 @@ export default {
 
 <style scoped>
 
+h2 {
+  font-family: 'Old Standard TT', serif;
+  color: var(--fiveth-color);
+  font-size: 40px;
+  margin: 30px auto;
+  text-align: center;
+}
+
 @media (max-width: 827px){
 .form-container {
   width: 60%;
   margin: 30px auto;
-}}
+}
+h2{
+  font-size: 32px;
+}
+p{
+  font-size: 16px;
+}
+
+}
 
 @media (max-width: 768px) {
-  /* For mobile phones: */
+
 .form-container {
   width: 100%;
   margin: 5px auto;
   }
 }
 
-h1{
-  text-align: center;
-  width: 70%;
-  margin: 30px auto;
-}
 
 p{
     text-align: center;
-    width: 70%;
+    width: 60%;
     margin: 30px auto;
 }
 
 form {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   padding-bottom: 2em;
 }
@@ -186,12 +197,12 @@ fieldset {
 
 fieldset legend{
   font-size: 18pt;
-  border-bottom: 3px solid #008037;
+  border-bottom: 3px solid var(--fiveth-color);
   font-weight:600;
 }
 
 .line-left{
-  border-left: 2px solid #008037;
+  border-left: 2px solid var(--fiveth-color);
   padding: 0 2px;
 }
 label {
@@ -209,7 +220,7 @@ select, option {
 
 input, select option {
   border: 1px solid;
-  border-radius: 50px #008037;
+  border-radius: 50px var(--fiveth-color);
 
 }
 
@@ -226,7 +237,7 @@ input, select option {
 .submit-btn {
   display: block;
   width: 60%;
-  background-color: #008037;
+  background-color: var(--fiveth-color);
   color: #FFF;
   font-weight: bold;
   border: 2px solid #222;

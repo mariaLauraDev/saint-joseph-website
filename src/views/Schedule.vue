@@ -1,32 +1,33 @@
 <template>
-  <div class="container">
-
-    <div class="head"> 
+<div>
+  <div class="head"> 
       <h2> CRONOGRAMA SEMANAL </h2>
     </div>
-    
+
+  <div class="container">
+
     <div class="day-container"> 
       <div class="header">
         Domingo
       </div>
       <div class="content">
         <div><span class="time"> 07:00 </span> Missa dominical </div>
-        <div><span class="time"> 08:30 </span> Encontro - Catequese de Jovens</div>
+        <div><span class="time"> 08:30 </span> Catequese de Jovens</div>
       </div>
     </div>
 
     <div class="day-container"> 
       <div class="header">
-        Segunda-Feira
+        Segunda
       </div>
       <div class="content">
-        <div><span class="time"> 19:30 </span> Grupos de Reflexões (Estudo Bíblico) </div>
+        <div><span class="time"> 19:30 </span> Grupo de Reflexão </div>
       </div>
     </div>
 
     <div class="day-container"> 
       <div class="header">
-        Terça-Feira
+        Terça
       </div>
       <div class="content">
         <div><span class="time"> 19:30 </span> Terço da Família </div>
@@ -35,7 +36,7 @@
 
     <div class="day-container"> 
       <div class="header">
-        Quarta-Feira
+        Quarta
       </div>
       <div class="content">
         <div><span class="time"> 16:30 </span> Legião de Maria </div>
@@ -44,7 +45,7 @@
 
     <div class="day-container"> 
       <div class="header">
-        Quinta-Feira
+        Quinta
       </div>
       <div class="content">
         <div><span class="time"> 19:30 </span> Adoração Eucarística </div>
@@ -53,7 +54,7 @@
 
     <div class="day-container"> 
       <div class="header">
-        Sexta-Feira
+        Sexta
       </div>
       <div class="content">
         <div><span class="time"> 19:30 </span> Via Sacra </div>
@@ -65,11 +66,12 @@
         Sábado
       </div>
       <div class="content">
-        <div><span class="time"> 16:30 </span> Encontro - Catequese Infantil </div>
+        <div><span class="time"> 16:30 </span> Catequese Infantil </div>
       </div>
     </div>
 
   </div>
+</div>
 </template>
 
 <script>
@@ -79,55 +81,64 @@ export default {
 </script>
 
 <style>
-@media (max-width: 827px){
-.container {
-  width: 60%;
-  margin: 30px auto;
-}
-
-}
-
-@media (max-width: 768px) {
-  /* For mobile phones: */
-.container {
-  width: 100%;
-  margin: 5px auto;
-  }
-  .day-container{
-  width: 90%;
-  margin: 0 auto;
-  padding-bottom: 2em;
-}
-}
-
-h2{
+h2 {
+  font-family: 'Old Standard TT', serif;
+  color: var(--fiveth-color);
+  font-size: 40px;
+  margin: 20px auto;
   text-align: center;
-  width: 70%;
-  margin: 30px auto;
-  font-size: 32px;
-}
-
-.day-container{
-  width:70%;
-  margin: 0 auto;
-  padding-bottom: 2em;
-}
-
-.header{
-  font-size: 18pt;
-  border-bottom: 3px solid #008037;
-  font-weight: 600;
-  margin: 0 0  15px 0;
-}
-
-.content{
-  font-size: 14pt;
-  
 }
 
 .time{
   font-weight: 600;
-  margin: 0 15px  15px 0;
+  margin: 0 10px  10px 0;
 }
 
+.content{
+  font-size: 16px;
+  background-color: rgba(171, 129,90,.2);
+  color: var(--primary-color);
+  border-radius: 30px;
+  padding: 15px;
+  text-align: left;
+}
+.day-container{
+  width: 165px;
+  margin: 10px 3px;
+}
+
+.header{
+  font-size: 20px;
+  background-color: rgba(171, 129,90,1);
+  color: #fff;
+  border-radius: 30px;
+  text-align: center;
+  margin: 10px 10px;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+@media(max-width:1140px){
+
+.container{
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.day-container{
+  width:300px;
+  margin: 10px 3px;
+}
+.content{ 
+  margin: auto auto;
+}
+}
 </style>

@@ -34,6 +34,7 @@ export default {
     const cancelBtn =document.querySelector(".cancel-icon");
     const items =document.querySelector(".nav-items");
     const form =document.querySelector("form");
+    
     menuBtn.onclick = () =>{
       items.classList.add("active");
       menuBtn.classList.add("hide");

@@ -2,12 +2,14 @@
   <div>
     <div class="quote">
     
-    <span id="aspas" class="fa-solid fa-quote-left"></span>
+    <span id="aspas"> <img src="../assets/films/aspas.png"> </span>
     <span class="phrase">
       Só se ama aquilo que se conhece.
     </span>
-
+    <span id="aspas"> <img src="../assets/films/aspas2.png"> </span>
     <div class="author">Santo Agostinho</div>
+
+    <p> É importante buscar viver a fé no ordinário dos nossos dias. Busque por bons filmes para assistir com sua família e, assim, alimentar sua fé! A seguir, tem-se filmes da base de dados <a href="https://www.themoviedb.org/" > The Movie Database</a>.</p>
     <Films />
   </div>
   </div>
@@ -27,15 +29,16 @@ export default {
 
 <style scoped>
 .quote{
-
   display: block;
   text-align: center;
-  margin: 50px auto;
+  margin: 30px auto;
   justify-content: center;
 }
 
-#aspas{
+
+#aspas img{
   margin:0 10px;
+  width: 60px;
   color: var(--fiveth-color);
   font-size: 40px;
 
@@ -47,7 +50,7 @@ export default {
   text-align: left;
 }
 
-.quote .author, p{
+.quote .author{
   font-family: inherit;
   font-weight: 300;
   text-transform: uppercase;
@@ -55,6 +58,16 @@ export default {
 }
 
 p{
-  font-size: 40px;
+  width: 65%;
+  font-size: 16px;
+  text-align: left;
+  margin: 20px auto;
+}
+
+a{
+  color: #29BBD2;
+  text-decoration: none;
+
+  
 }
 </style>
