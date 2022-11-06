@@ -43,7 +43,7 @@
 
         <label for="referrer"><span class="line-left"></span> Como conheceu a Catequese?
           <select id="referrer" name="referrer">
-            <option value="">(select one)</option>
+            <option value="">(Selecione um)</option>
             <option value="1">Divulgação nas missas</option>
             <option value="2">Instagram</option>
             <option value="3">WhatsApp</option>
@@ -148,7 +148,6 @@ export default {
 
 h2 {
   font-family: 'Old Standard TT', serif;
-  color: var(--fiveth-color);
   font-size: 40px;
   margin: 30px auto;
   text-align: center;

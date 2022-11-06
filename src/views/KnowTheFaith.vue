@@ -9,7 +9,7 @@
     <span id="aspas"> <img src="../assets/films/aspas2.png"> </span>
     <div class="author">Santo Agostinho</div>
 
-    <p> É importante buscar viver a fé no ordinário dos nossos dias. Busque por bons filmes para assistir com sua família e, assim, alimentar sua fé! A seguir, tem-se filmes da base de dados <a href="https://www.themoviedb.org/" > The Movie Database</a>.</p>
+    <p> É importante buscar viver a fé no ordinário dos nossos dias. Busque por bons filmes para assistir com sua família e, assim, alimentar sua fé! A seguir, tem-se filmes da base de dados <a href="https://www.themoviedb.org/" > The Movie Database</a>, usando no campo de pesquisa o termo "Jesus".</p>
     <Films />
   </div>
   </div>

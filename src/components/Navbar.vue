@@ -1,27 +1,32 @@
 <template>
+<div>
+  <input type="checkbox" id="check">
   <nav>
-    <div class="menu-icon"><span class="bars"> <img src="../assets/navbar/menu.png"></span></div>
-    <div class="logo">
-      <router-link to="/" >  <img src="/img/logo-mono.png" alt="Logo da Comunidade São José" id ="logo"> </router-link> 
+    <div class="icon">
+      <router-link to="/" >  <img src="/img/logo-mono.png" alt="Logo da Comunidade São José" id ="icon"> </router-link> 
     </div>
-    
-    <div class="nav-items">
-      <ul>
+
+      
+
+      <ol>
         <li><router-link to="/"> Início </router-link></li>
         <li><router-link to="/activities"> Pastorais </router-link></li>
         <li><router-link to="/subscriptions"> Inscrições </router-link></li>
         <li><router-link to="/schedule"> Horários </router-link></li>
         <li><router-link to="/knowthefaith"> Conheça a fé </router-link></li>
-      </ul>
-      
-    </div>
-    <div class="search-icon"><span><img src="../assets/navbar/search.png"></span></div>
-    <div class="cancel-icon"><span> <img src="../assets/navbar/x.png"></span></div>
-    <form action="#">
+      </ol>
+
+      <div class="search-box">
       <input type="search" class="search-data" placeholder="Pesquisar..." required>
       <button type="submit"> <img src="../assets/navbar/search.png"></button>
-    </form>
+      </div>
+
+      <label for="check" class="bar">
+        <span class="bar" id="bars"> <img class="bar-icon" src="../assets/navbar/menu.png"></span>
+        <span class="bar" id="times"> <img class="cancel-icon" src="../assets/navbar/x.png"></span>
+      </label>
   </nav>
+</div>
 </template>
 
 <script>
@@ -29,259 +34,234 @@
 export default {
   name: 'Navbar',
   mounted(){
-    const menuBtn =document.querySelector(".menu-icon span");
-    const searchBtn =document.querySelector(".search-icon");
-    const cancelBtn =document.querySelector(".cancel-icon");
-    const items =document.querySelector(".nav-items");
-    const form =document.querySelector("form");
-    
-    menuBtn.onclick = () =>{
-      items.classList.add("active");
-      menuBtn.classList.add("hide");
-      searchBtn.classList.add("hide");
-      cancelBtn.classList.add("show");
-    }
-
-    cancelBtn.onclick = () =>{
-      items.classList.remove("active");
-      menuBtn.classList.remove("hide");
-      searchBtn.classList.remove("hide");
-      cancelBtn.classList.remove("show");
-      form.classList.remove("active");
-    }
-
-    searchBtn.onclick = () =>{
-      form.classList.add("active");
-      searchBtn.classList.add("hide");
-      cancelBtn.classList.add("show");
-    }
-  }
+   
+}
 }
 </script>
 
 <style scoped>
 
-nav{
-  background-color:  var(--primary-color);
-  padding: 0 100px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  height: 100px;
-  margin-bottom: 0;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-nav .nav-items li a{
-  color: #FFF;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-nav .nav-items li a:hover{
-  color: var(--fiveth-color); 
-}
-
-nav .nav-items li{
-  list-style: none;
-  padding: 0 15px;
-}
-
-
-nav .nav-items ul{
-  display: flex;
-  list-style: none;
-  padding: 0 0 0 15px;
-  flex: 1;
-}
-
-nav .nav-items{
-  display: flex;
-  list-style: none;
-  padding: 0 0 0 10px;
-  flex: 1;
-}
-
-#logo {
+#icon {
   max-width: 70px;
 }
 
-nav form{
+
+
+nav{
   display: flex;
-  height: 40px;
-  border-radius: 2px;
-  padding: 2px;
-  background: var(--primary-color);
-  min-width: 18%!important;
-  border: 1px solid rgba(155,155,155,0.2);
-  opacity: 0;
-  transition: top 0.3s ease, opacity 0.1s ease;
-  pointer-events: none;}
-
-nav form.active{
-  opacity: 1;
-  top: 95px;
-  pointer-events: auto;
-}
-
-nav form .search-data{
-  height: 100%;
   width: 100%;
-  padding: 0 10px;
-  color: #FFF ;
-  font-weight: 500;
-  background: none;
-  border: none;
-  font-size: 17px;
-}
-
-nav form button{
-  padding: 0 15px;
-  background: var(--secondary-color);
-  cursor: pointer;
-  font-size: 17px;
-  color:#fff ;
-  border-radius: 2px;
-}
-
-
-.menu-icon .bars img{
-  width: 25px;
-  height: 25px;
-}
-
-form button img{
-  width: 15px;
-  height: 15px;
-}
-
-.search-icon span img, .cancel-icon span img{
-  width: 15px;
-  height: 15px;
-}
-
-nav .menu-icon, nav .search-icon, nav .cancel-icon{
-  width: 25px;
-  height: 25px;
+  background: var(--primary-color);
+  position: relative;
+  justify-content: space-between;
   text-align: center;
-  margin: 0 50px;
-  font-size: 18px;
+  padding: 15px 100px;
+  align-items: center;
+}
+
+nav .icon{
   cursor: pointer;
-  display: none;
-}
-nav .menu-icon span, nav .search-icon, nav .cancel-icon{
-  display: none;
-
 }
 
-@media(max-width:1245px){
-  nav{
-    padding: 0 50px;
-  }
+nav ol{
+  display: flex;
+  list-style: none;
+  margin: auto 0;
+}
+
+nav ol li{
+  margin: 0 2px;
+  position: relative;
+  transition: .3s;
+}
+
+nav ol li a{
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
+
+nav ol li:hover a{
+  color: var(--fiveth-color);
+}
 
 
+nav ol li:after{
+  content: '';
+  position: absolute;
+  background: var(--fiveth-color);
+  left: 0; 
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+nav ol li:hover::after{
+  opacity: 1;
+  transform: translateY(8px);
+}
+
+.search-box img{
+  width: 15px;
+  height: 15px;
+}
+
+nav .search-box{
+  display: flex;
+  margin: auto 0;
+  height: 15px;
+}
+
+nav .search-box input{
+  border: none;
+  outline: none;
+  background: #202733;
+  border-radius: 20px;
+  height: 100%;
+  padding: 15px 10px;
+  font-size: 14px;
+  width: 250px;
+  color: var(--fiveth-color);
+}
+
+nav .search-box button{
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  height: 30px;
+  padding: 8px;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.bar-icon{
+  width: 25px;
+  height: 25px;
+}
+
+.cancel-icon{
+  width: 25px;
+  height: 25px;
+}
+
+nav .bar{
+  position: relative;
+  margin: auto;
+  display: none;
+}
+
+nav .bar span {
+  position: absolute;
+  
+}
+
+input[type="checkbox"]{
+  -webkit-appearance: none;
+  display: none;
 }
 
 @media(max-width:1140px){
   nav{
-    padding: 0;
+    display: block;
+    padding: 0 0 30px 0;
   }
-  .logo{
-    flex: 2;
-    text-align: center; 
+  nav .icon{
+    display: inline-block;
+    padding: 15px 30px;
   }
-  nav .nav-items{
-    position: fixed;
-    top: 100px;
+  nav .search-box{
     width: 100%;
-    height: 100%;
-    background: #202733;
-    left: -100%;
-    transition: left 0.3s ease;
+    margin: 0 auto;
+    display:flex;
+    justify-content: center;
+    overflow: visible;
   }
-
-  nav .nav-items.active{
-    left: 0%;
+  nav .search-box input{
+    width: 80%;
   }
-
-  nav .nav-items ul{
+  nav ol{
     display: flex;
     flex-direction: column;
-    padding: 10px 50px 0 50px;
-    text-align: center;
-  }
-
-  nav .nav-items li{
-    line-height: 40px;
-    margin: 30px 0;
-  }
-
-  nav .nav-items li a{
-    font-size: 20px;
-
-  }
-
-  nav form{
-    position: absolute;
-    top: 95px;
-    right: 50px;
-  }
-
-  nav form:before{
-    position: absolute;
-    content: "";
-    top: -10px;
-    right: 0;
-    width: 0;
+    background: #202733;
     height: 0;
-    z-index: -1;
-    margin: -20px 0 0;
-    border: 10px solid transparent;
-    border-bottom-color:  #202733;
+    visibility: hidden;
+    transition: 0.3s;
+  }
+  nav ol li{
+    text-align: center;
+    transition: 0.3s 0.1s all;
+    opacity: 0;
   }
 
-  nav form:after{
+  nav ol li a{
+    color:#fff;
+    font-size: 24px;
+    padding: 25px;
+    display: block;
+  }
+
+  nav ol li:nth-child(1){
+    transform: translateX(-150px);
+  }
+  nav ol li:nth-child(2){
+    transform: translateX(-200px);
+  }
+  nav ol li:nth-child(3){
+    transform: translateX(-250px);
+  }
+  nav ol li:nth-child(4){
+    transform: translateX(-300px);
+  }
+  nav ol li:nth-child(5){
+    transform: translateX(-350px);
+  }
+
+  nav .bar{
+    display: block;
     position: absolute;
-    content: "";
-    height: 60px;
-    width: calc(100%+20px);
-    padding: 2px;
-    background: #202733 ;
-    border-radius: 2px;
-    z-index: -2;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%,);
-    }
-  
-  nav .menu-icon{
-    display: block;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
   }
-
-  nav .search-icon, nav .menu-icon span{
-    display: block;
-  }
-
-  nav .search-icon.hide, nav .menu-icon span.hide{
+  nav .bar #times{
     display: none;
   }
 
-  nav .cancel-icon.show{
+  #check:checked ~ nav .bar #times{
     display: block;
   }
+  #check:checked ~ nav .bar #bars{
+    display: none;
+  }
+
+  #check:checked ~ nav ol{
+    visibility: visible;
+    height: 465px;
+  }
+
+   #check:checked ~ nav ol li:nth-child(1),
+   #check:checked ~ nav ol li:nth-child(2),
+   #check:checked ~ nav ol li:nth-child(3),
+   #check:checked ~ nav ol li:nth-child(4),
+   #check:checked ~ nav ol li:nth-child(5){
+    transform: translateX(0);
+    opacity: 1;
+   }
+
+
+
 
 }
 
-
-
-
-
-
-
-
+  
 
 
 </style>

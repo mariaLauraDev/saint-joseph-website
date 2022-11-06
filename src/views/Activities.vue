@@ -57,8 +57,9 @@ flex-direction: row-reverse;
 
 .image img{
   width: 300px;
-  border-radius: 50px;
-  border: 3px solid var(--fiveth-color)
+  border-radius: 20px;
+  border: 3px solid var(--fiveth-color);
+
 }
 
 .title{
@@ -71,6 +72,7 @@ flex-direction: row-reverse;
 .description{
   margin: 30px 30px;
 }
+
 
 @media(max-width:1140px){
   .box{

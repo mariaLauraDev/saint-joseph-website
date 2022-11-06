@@ -80,10 +80,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 h2 {
   font-family: 'Old Standard TT', serif;
-  color: var(--fiveth-color);
   font-size: 40px;
   margin: 20px auto;
   text-align: center;

@@ -1,11 +1,12 @@
 <template>
 <div class="container">
-  <div class="header_one">bem vindo ao site</div>
-
-  <div class="header_two">Comunidade São José</div>
-
-  <div class="header_three"> PARÓQUIA NOSSA SENHORA DA CONCEIÇÃO - MESSEJANA </div>
-
+  <div class="text">
+    <h3>  bem vindo ao site</h3>
+    <h2> Comunidade São José</h2>
+    <h3 class="description">PARÓQUIA NOSSA SENHORA DA CONCEIÇÃO - MESSEJANA</h3>
+  </div>
+  
+  
 </div>
 </template>
 
@@ -26,13 +27,18 @@ export default {
   background-color: var(--primary-color);
   margin-top: 0;
 }
-
-.header_one{
+.text{
+  padding: 160px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h3{
   display: block;
   text-align: center;
   margin: 0 auto;
-  padding: 200px;
   padding-bottom: 30px;
+  padding-top: 5px;
   justify-content: center;
   font-size: 20px;
   color: var(--fiveth-color);
@@ -41,12 +47,12 @@ export default {
   text-transform: uppercase;
 }
 
-.header_two{
+h2{
   display: block;
   text-align: center;
   margin: 0 auto;
   justify-content: center;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   font-size: 60px;
   color: #fff;
   font-family: 'Old Standard TT', serif;
@@ -54,7 +60,7 @@ export default {
   font-weight:700;
 }
 
-.header_three{
+h3{
   display: block;
   text-align: center;
   margin: 0 auto;
@@ -69,7 +75,7 @@ export default {
 @media(max-width:1140px){
   .container{
   width: 100%;
-  height: 550px;
+  height:550px;
   background-image: url('../assets/saint-joseph-mob.png');
   background-repeat: no-repeat;
   background-position: center top;
@@ -78,20 +84,21 @@ export default {
   margin-top: 0;
 }
 
-.header_one{
-  padding: 60px;
-  padding-bottom: 20px;
-}
 
-.header_two{
+h2{
   font-size: 40px;
 }
 
-.header_three{
+.description{
   display: none;
-
 }
 
+.text{
+  padding:40px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 }
 
 

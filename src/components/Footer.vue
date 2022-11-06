@@ -31,7 +31,7 @@ export default {
 }
 
 a {
-  color: var(--fiveth-color);
+  color: #fff;
   text-decoration: none;
   margin: 12px;
   transition: .5s;
@@ -43,10 +43,10 @@ a:visited {
 }
 
 a:hover {
-  color: var(#fff);
+  color: var(--fiveth-color);
 }
 
 a:active {
-  color: var(--fiveth-color);
+  color: #fff;
 }
 </style>

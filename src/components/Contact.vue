@@ -10,7 +10,6 @@
           <li><span class="icon"> <img src="../assets/homeview/email.png" alt="email icon"> com.saojose@gmail.com</span></li>
         </ul>
       </div>
-
     </div>
 
   </div>
@@ -49,6 +48,7 @@ h2{
 .icon img{
   width: 30px;
   height: 30px;
+  margin: 5px;
 }
 
 .text{
