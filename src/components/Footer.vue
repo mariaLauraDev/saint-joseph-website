@@ -16,7 +16,7 @@ export default {
 <style scoped>
 #footer{
   height: 300px;
-  background-color: var(--primary-color);
+  background-color: var(--first-color);
   background-image: url('../assets/lirios.png');
   background-repeat: no-repeat;
   background-position: center top;
@@ -35,15 +35,15 @@ a {
   text-decoration: none;
   margin: 12px;
   transition: .5s;
-  font-size: var(--wp--preset--font-size--medium);
+  font-size: 20px;
 }
 
 a:visited {
-  color: var(--eith-color);
+  color: var(--fourth-color);
 }
 
 a:hover {
-  color: var(--fiveth-color);
+  color: var(--second-color);
 }
 
 a:active {

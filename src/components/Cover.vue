@@ -24,7 +24,7 @@ export default {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  background-color: var(--primary-color);
+  background-color: var(--first-color);
   margin-top: 0;
 }
 .text{
@@ -33,6 +33,7 @@ export default {
   flex-direction: column;
   justify-content: center;
 }
+
 h3{
   display: block;
   text-align: center;
@@ -41,7 +42,7 @@ h3{
   padding-top: 5px;
   justify-content: center;
   font-size: 20px;
-  color: var(--fiveth-color);
+  color: var(--second-color);
   font-family: inherit;
   font-weight:100;
   text-transform: uppercase;
@@ -60,18 +61,6 @@ h2{
   font-weight:700;
 }
 
-h3{
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-  justify-content: center;
-  font-size: 20px;
-  color: var(--fiveth-color);
-  font-family: inherit;
-  text-transform: uppercase;
-  font-weight:300;
-}
-
 @media(max-width:1140px){
   .container{
   width: 100%;
@@ -80,7 +69,7 @@ h3{
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  background-color: var(--primary-color);
+  background-color: var(--first-color);
   margin-top: 0;
 }
 

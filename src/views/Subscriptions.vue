@@ -196,12 +196,12 @@ fieldset {
 
 fieldset legend{
   font-size: 18pt;
-  border-bottom: 3px solid var(--fiveth-color);
+  border-bottom: 3px solid var(--second-color);
   font-weight:600;
 }
 
 .line-left{
-  border-left: 2px solid var(--fiveth-color);
+  border-left: 2px solid var(--second-color);
   padding: 0 2px;
 }
 label {
@@ -219,7 +219,7 @@ select, option {
 
 input, select option {
   border: 1px solid;
-  border-radius: 50px var(--fiveth-color);
+  border-radius: 50px var(--second-color);
 
 }
 
@@ -236,7 +236,7 @@ input, select option {
 .submit-btn {
   display: block;
   width: 60%;
-  background-color: var(--fiveth-color);
+  background-color: var(--second-color);
   color: #FFF;
   font-weight: bold;
   border: 2px solid #222;

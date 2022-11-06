@@ -39,9 +39,7 @@ export default {
 #aspas img{
   margin:0 10px;
   width: 60px;
-  color: var(--fiveth-color);
   font-size: 40px;
-
 }
     
 .quote .phrase{
@@ -67,7 +65,5 @@ p{
 a{
   color: #29BBD2;
   text-decoration: none;
-
-  
 }
 </style>

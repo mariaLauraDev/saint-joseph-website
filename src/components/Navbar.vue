@@ -6,8 +6,6 @@
       <router-link to="/" >  <img src="/img/logo-mono.png" alt="Logo da Comunidade São José" id ="icon"> </router-link> 
     </div>
 
-      
-
       <ol>
         <li><router-link to="/"> Início </router-link></li>
         <li><router-link to="/activities"> Pastorais </router-link></li>
@@ -50,7 +48,7 @@ export default {
 nav{
   display: flex;
   width: 100%;
-  background: var(--primary-color);
+  background: var(--first-color);
   position: relative;
   justify-content: space-between;
   text-align: center;
@@ -83,14 +81,14 @@ nav ol li a{
 }
 
 nav ol li:hover a{
-  color: var(--fiveth-color);
+  color: var(--second-color);
 }
 
 
 nav ol li:after{
   content: '';
   position: absolute;
-  background: var(--fiveth-color);
+  background: var(--second-color);
   left: 0; 
   bottom: 0;
   width: 100%;
@@ -124,7 +122,7 @@ nav .search-box input{
   padding: 15px 10px;
   font-size: 14px;
   width: 250px;
-  color: var(--fiveth-color);
+  color: var(--second-color);
 }
 
 nav .search-box button{
@@ -256,12 +254,6 @@ input[type="checkbox"]{
     opacity: 1;
    }
 
-
-
-
 }
-
-  
-
 
 </style>

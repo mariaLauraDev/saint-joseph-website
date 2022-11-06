@@ -138,33 +138,6 @@
       }
     ]
   },
-  "genders": [
-    {
-      "id": 1,
-      "gender": "Feminino"
-    },
-    {
-      "id": 2,
-      "gender": "Masculino"
-    }
-  ],
-  "catechists": [
-    {
-      "id": 1,
-      "name": "Kelson",
-      "phone": "(85) 99793-1611"
-    },
-    {
-      "id": 2,
-      "name": "Laura",
-      "phone": "(85) 99763-5777"
-    },
-    {
-      "id": 3,
-      "name": "Letícia",
-      "phone": "(85) 98752-1111"
-    }
-  ],
   "subscriptions": [
   ]
 }

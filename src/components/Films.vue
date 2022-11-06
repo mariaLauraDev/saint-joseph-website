@@ -182,7 +182,7 @@ export default {
   margin: 1rem;
   border-radius: 3px;
   box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
-  background-color: var(--primary-color);
+  background-color: var(--first-color);
   position: relative;
   overflow: hidden;
 }
@@ -206,7 +206,7 @@ export default {
 }
 
 .movie-info span{
-  background-color: var(--seventh-color);
+  background-color: var(--third-color);
   padding: .25rem .5rem;
   border-radius: 3px;
   font-weight: bold;
@@ -237,7 +237,7 @@ transform: translateY(0);
   margin: 10px auto;
   align-items: center;
   justify-content: center;
-  color: var(--primary-color);
+  color: var(--first-color);
 }
 
 .page{
@@ -252,8 +252,8 @@ transform: translateY(0);
 .current{
   padding: 10px 20px;
   color: #fff;
-  background-color: var(--primary-color);
-  border: 3px solid var(--primary-color);
+  background-color: var(--first-color);
+  border: 3px solid var(--first-color);
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
@@ -272,15 +272,15 @@ transform: translateY(0);
 
 .page:hover{
   color: #fff;
-  background-color: var(--primary-color);
-  border: 3px solid var(--primary-color);
+  background-color: var(--first-color);
+  border: 3px solid var(--first-color);
 }
 
 .show{
   width: 30%;
   margin: 30px auto;
   padding: 10px 20px;
-  color: var(--primary-color);
+  color: var(--first-color);
   background-color: #fff;
   border: 3px solid rgba(24,29,38,.2);
   font-size: 18px;
@@ -291,8 +291,8 @@ transform: translateY(0);
 
 .show:hover{
   color: #fff;
-  background-color: var(--primary-color);
-  border: 3px solid var(--primary-color);
+  background-color: var(--first-color);
+  border: 3px solid var(--first-color);
 }
 
 .show.disabled{

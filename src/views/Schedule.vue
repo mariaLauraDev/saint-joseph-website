@@ -96,7 +96,7 @@ h2 {
 .content{
   font-size: 16px;
   background-color: rgba(171, 129,90,.2);
-  color: var(--primary-color);
+  color: var(--first-color);
   border-radius: 30px;
   padding: 15px;
   text-align: left;

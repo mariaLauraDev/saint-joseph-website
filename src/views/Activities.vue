@@ -58,13 +58,12 @@ flex-direction: row-reverse;
 .image img{
   width: 300px;
   border-radius: 20px;
-  border: 3px solid var(--fiveth-color);
-
+  border: 3px solid var(--second-color);
 }
 
 .title{
   font-size: 50px;
-  color: var(--fiveth-color);
+  color: var(--second-color);
   font-family: 'Old Standard TT', serif;
   font-weight: bold;
 }
@@ -77,6 +76,7 @@ flex-direction: row-reverse;
 @media(max-width:1140px){
   .box{
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
