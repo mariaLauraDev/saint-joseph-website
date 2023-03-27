@@ -60,3 +60,5 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+![Visitor Count](https://visitor-badge.glitch.me/badge?page_id=saint-joseph-website)
